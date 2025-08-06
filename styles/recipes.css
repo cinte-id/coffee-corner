@@ -249,11 +249,16 @@
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
+    position: relative;
+    z-index: 1;
 }
 
 .modal-header h2 {
     margin: 0;
     font-size: 2rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 .close {
@@ -262,14 +267,26 @@
     cursor: pointer;
     color: var(--white);
     transition: var(--transition);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
 }
 
 .close:hover {
     transform: scale(1.1);
+    background: rgba(0,0,0,0.2);
 }
 
 .modal-body {
     padding: 2rem;
+    background: var(--white);
+    color: var(--text-primary);
 }
 
 .recipe-details {
@@ -328,7 +345,8 @@
     position: relative;
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
+    font-weight: 500;
 }
 
 .ingredients li::before {
@@ -346,8 +364,9 @@
 
 .instructions li {
     margin-bottom: 1rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     line-height: 1.6;
+    font-weight: 500;
 }
 
 .tips {
@@ -356,9 +375,10 @@
 }
 
 .tips p {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     line-height: 1.6;
     margin: 0;
+    font-weight: 500;
 }
 
 /* Coffee Ratios Chart */

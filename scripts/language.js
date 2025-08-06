@@ -14,23 +14,6 @@ class LanguageManager {
         console.log(`🌍 Current language set to: ${this.currentLanguage}`);
         this.createLanguageSwitcher();
         this.applyTranslations();
-        
-        // Add temporary language indicator for debugging
-        const indicator = document.createElement('div');
-        indicator.style.cssText = `
-            position: fixed;
-            top: 80px;
-            right: 20px;
-            background: #ff9800;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 3px;
-            font-size: 11px;
-            z-index: 9999;
-            font-family: Arial, sans-serif;
-        `;
-        indicator.textContent = `Lang: ${this.currentLanguage}`;
-        document.body.appendChild(indicator);
     }
 
     // Auto-detect language based on browser settings

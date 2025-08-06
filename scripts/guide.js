@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Interactive checklist functionality
     initializeChecklists();
     
-    // Print functionality for guides
-    initializePrintFeatures();
+    // Removed print functionality as requested
     
     // Reading time estimation
     calculateReadingTime();
@@ -226,73 +225,7 @@ function initializeChecklists() {
     });
 }
 
-// Print functionality
-function initializePrintFeatures() {
-    // Add print button to guides
-    const printButton = document.createElement('button');
-    printButton.className = 'print-guide-btn';
-    printButton.innerHTML = '<i class="fas fa-print"></i> Print Guide';
-    printButton.onclick = printGuide;
-    
-    // Add to quick nav if it exists
-    const quickNav = document.querySelector('.quick-nav .container');
-    if (quickNav) {
-        printButton.style.cssText = `
-            padding: 0.5rem 1rem;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            margin-top: 1rem;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        `;
-        
-        // Create a separate container for the print button
-        const printContainer = document.createElement('div');
-        printContainer.style.cssText = `
-            text-align: center;
-            margin-top: 1rem;
-        `;
-        // Add hover effects
-        printButton.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-2px)';
-            this.style.boxShadow = '0 4px 8px rgba(0,0,0,0.15)';
-        });
-        
-        printButton.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-            this.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
-        });
-        
-        printContainer.appendChild(printButton);
-        quickNav.appendChild(printContainer);
-    }
-}
-
-// Print guide function
-function printGuide() {
-    // Create print-friendly version
-    const printWindow = window.open('', '_blank');
-    const content = document.documentElement.outerHTML;
-    
-    // Modify content for printing
-    const printContent = content
-        .replace(/<nav[^>]*>.*?<\/nav>/gs, '')
-        .replace(/<footer[^>]*>.*?<\/footer>/gs, '')
-        .replace(/class="navbar[^"]*"/g, 'style="display:none"')
-        .replace(/class="quick-nav[^"]*"/g, 'style="display:none"')
-        .replace(/class="guide-navigation[^"]*"/g, 'style="display:none"');
-    
-    printWindow.document.write(printContent);
-    printWindow.document.close();
-    printWindow.print();
-}
+// Print functionality removed as requested
 
 // Calculate reading time
 function calculateReadingTime() {
@@ -348,12 +281,6 @@ function initializeSectionTracking() {
 
 // Keyboard shortcuts
 document.addEventListener('keydown', function(e) {
-    // Ctrl/Cmd + P for print
-    if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
-        e.preventDefault();
-        printGuide();
-    }
-    
     // Ctrl/Cmd + R for reset progress
     if ((e.ctrlKey || e.metaKey) && e.key === 'r' && e.shiftKey) {
         e.preventDefault();

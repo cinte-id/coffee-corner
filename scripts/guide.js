@@ -238,9 +238,6 @@ function initializePrintFeatures() {
     const quickNav = document.querySelector('.quick-nav .container');
     if (quickNav) {
         printButton.style.cssText = `
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
             padding: 0.5rem 1rem;
             background: var(--primary-color);
             color: white;
@@ -248,9 +245,33 @@ function initializePrintFeatures() {
             border-radius: 6px;
             cursor: pointer;
             font-size: 0.9rem;
+            margin-top: 1rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         `;
-        quickNav.style.position = 'relative';
-        quickNav.appendChild(printButton);
+        
+        // Create a separate container for the print button
+        const printContainer = document.createElement('div');
+        printContainer.style.cssText = `
+            text-align: center;
+            margin-top: 1rem;
+        `;
+        // Add hover effects
+        printButton.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-2px)';
+            this.style.boxShadow = '0 4px 8px rgba(0,0,0,0.15)';
+        });
+        
+        printButton.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+        });
+        
+        printContainer.appendChild(printButton);
+        quickNav.appendChild(printContainer);
     }
 }
 

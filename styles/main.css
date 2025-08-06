@@ -130,6 +130,19 @@ p {
     color: var(--primary-color);
 }
 
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+.nav-logo a:hover {
+    opacity: 0.8;
+}
+
 .nav-logo i {
     font-size: 1.8rem;
 }

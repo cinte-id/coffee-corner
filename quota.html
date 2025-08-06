@@ -6,10 +6,11 @@
     <title>Quota & Tips - Cinte Coffee Corner</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/guide.css">
+    <link rel="stylesheet" href="styles/language.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body data-page-title="nav.quota">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -21,19 +22,19 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link" data-translate="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="espresso-guide.html" class="nav-link">Espresso Guide</a>
+                    <a href="espresso-guide.html" class="nav-link" data-translate="nav.espresso-guide">Espresso Guide</a>
                 </li>
                 <li class="nav-item">
-                    <a href="recipes.html" class="nav-link">Coffee Recipes</a>
+                    <a href="recipes.html" class="nav-link" data-translate="nav.recipes">Coffee Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a href="maintenance.html" class="nav-link">Maintenance</a>
+                    <a href="maintenance.html" class="nav-link" data-translate="nav.maintenance">Maintenance</a>
                 </li>
                 <li class="nav-item">
-                    <a href="quota.html" class="nav-link active">Quota & Tips</a>
+                    <a href="quota.html" class="nav-link active" data-translate="nav.quota">Quota & Tips</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -49,24 +50,24 @@
         <div class="container">
             <div class="hero-content">
                 <div class="breadcrumb">
-                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="index.html"><i class="fas fa-home"></i> <span data-translate="quota.breadcrumb.home">Home</span></a>
                     <span><i class="fas fa-chevron-right"></i></span>
-                    <span>Quota & Tips</span>
+                    <span data-translate="quota.breadcrumb.guide">Quota & Tips</span>
                 </div>
-                <h1>Supply Quota & Contribution System</h1>
-                <p>Learn about our monthly supply system, how quotas work, and how you can contribute to keep our coffee corner running smoothly for everyone.</p>
+                <h1 data-translate="quota.hero.title">Supply Quota & Contribution System</h1>
+                <p data-translate="quota.hero.desc">Learn about our monthly supply system, how quotas work, and how you can contribute to keep our coffee corner running smoothly for everyone.</p>
                 <div class="guide-stats">
                     <div class="stat">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>Monthly Quotas</span>
+                        <span data-translate="quota.stats.monthly">Monthly Quotas</span>
                     </div>
                     <div class="stat">
                         <i class="fas fa-heart"></i>
-                        <span>Community Driven</span>
+                        <span data-translate="quota.stats.community">Community Driven</span>
                     </div>
                     <div class="stat">
                         <i class="fas fa-coins"></i>
-                        <span>Donation Based</span>
+                        <span data-translate="quota.stats.donation">Donation Based</span>
                     </div>
                 </div>
             </div>
@@ -77,8 +78,8 @@
     <section class="how-it-works">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-info-circle"></i> How Our System Works</h2>
-                <p>Understanding our community-driven coffee supply system</p>
+                <h2><i class="fas fa-info-circle"></i> <span data-translate="quota.how-it-works.title">How Our System Works</span></h2>
+                <p data-translate="quota.how-it-works.desc">Understanding our community-driven coffee supply system</p>
             </div>
             
             <div class="process-flow">
@@ -536,5 +537,7 @@
             });
         });
     </script>
+    <script src="scripts/language.js"></script>
+    <script src="scripts/analytics.js"></script>
 </body>
 </html> 

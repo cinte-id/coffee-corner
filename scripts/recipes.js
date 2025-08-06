@@ -294,6 +294,22 @@ function openRecipe(recipeKey) {
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
     
+    // Track recipe view with analytics
+    if (window.analyticsManager) {
+        // Find the recipe card to get additional data
+        const recipeCard = document.querySelector(`[onclick="openRecipe('${recipeKey}')"]`)?.closest('.recipe-card');
+        const difficulty = recipeCard?.getAttribute('data-difficulty') || recipe.difficulty.toLowerCase();
+        const category = recipeCard?.getAttribute('data-category') || 'unknown';
+        
+        window.analyticsManager.trackEvent('recipe_view', {
+            event_category: 'recipe_interaction',
+            recipe_name: recipe.title,
+            recipe_difficulty: difficulty,
+            recipe_category: category,
+            recipe_key: recipeKey
+        });
+    }
+    
     // Focus management for accessibility
     modal.querySelector('.close').focus();
 }

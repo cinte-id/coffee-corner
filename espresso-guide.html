@@ -6,10 +6,11 @@
     <title>Espresso Machine Guide - Cinte Coffee Corner</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/guide.css">
+    <link rel="stylesheet" href="styles/language.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body data-page-title="espresso.title">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -21,19 +22,19 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link" data-translate="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="espresso-guide.html" class="nav-link active">Espresso Guide</a>
+                    <a href="espresso-guide.html" class="nav-link active" data-translate="nav.espresso-guide">Espresso Guide</a>
                 </li>
                 <li class="nav-item">
-                    <a href="recipes.html" class="nav-link">Coffee Recipes</a>
+                    <a href="recipes.html" class="nav-link" data-translate="nav.recipes">Coffee Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a href="maintenance.html" class="nav-link">Maintenance</a>
+                    <a href="maintenance.html" class="nav-link" data-translate="nav.maintenance">Maintenance</a>
                 </li>
                 <li class="nav-item">
-                    <a href="quota.html" class="nav-link">Quota & Tips</a>
+                    <a href="quota.html" class="nav-link" data-translate="nav.quota">Quota & Tips</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -49,36 +50,36 @@
         <div class="container">
             <div class="hero-content">
                 <div class="breadcrumb">
-                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="index.html"><i class="fas fa-home"></i> <span data-translate="espresso.breadcrumb.home">Home</span></a>
                     <span><i class="fas fa-chevron-right"></i></span>
-                    <span>Espresso Machine Guide</span>
+                    <span data-translate="espresso.breadcrumb.guide">Espresso Machine Guide</span>
                 </div>
-                <h1>DeLonghi EC 230 BK Operation Guide</h1>
-                <p>Master the art of making perfect espresso with our DeLonghi EC 230 BK espresso machine. This comprehensive guide covers everything you need to know about operating this specific model safely and efficiently.</p>
+                <h1 data-translate="espresso.hero.title">DeLonghi EC 230 BK Operation Guide</h1>
+                <p data-translate="espresso.hero.desc">Master the art of making perfect espresso with our DeLonghi EC 230 BK espresso machine. This comprehensive guide covers everything you need to know about operating this specific model safely and efficiently.</p>
                 <div class="machine-info">
                     <div class="machine-details">
-                        <h3><i class="fas fa-coffee"></i> Machine Specifications</h3>
+                        <h3><i class="fas fa-coffee"></i> <span data-translate="espresso.machine.specs">Machine Specifications</span></h3>
                         <ul>
-                            <li><strong>Model:</strong> DeLonghi EC 230 BK</li>
-                            <li><strong>Type:</strong> Manual Espresso Machine</li>
-                            <li><strong>Color:</strong> Black</li>
-                            <li><strong>Capacity:</strong> 1L Water Tank</li>
-                            <li><strong>Pressure:</strong> 15 Bar Pump</li>
+                            <li><strong data-translate="espresso.machine.model">Model:</strong> DeLonghi EC 230 BK</li>
+                            <li><strong data-translate="espresso.machine.type">Type:</strong> Manual Espresso Machine</li>
+                            <li><strong data-translate="espresso.machine.color">Color:</strong> Black</li>
+                            <li><strong data-translate="espresso.machine.capacity">Capacity:</strong> 1L Water Tank</li>
+                            <li><strong data-translate="espresso.machine.pressure">Pressure:</strong> 15 Bar Pump</li>
                         </ul>
                     </div>
                 </div>
                 <div class="guide-stats">
                     <div class="stat">
                         <i class="fas fa-clock"></i>
-                        <span>5-10 min read</span>
+                        <span data-translate="espresso.stats.read-time">5-10 min read</span>
                     </div>
                     <div class="stat">
                         <i class="fas fa-signal"></i>
-                        <span>Beginner Friendly</span>
+                        <span data-translate="espresso.stats.difficulty">Beginner Friendly</span>
                     </div>
                     <div class="stat">
                         <i class="fas fa-users"></i>
-                        <span>For Everyone</span>
+                        <span data-translate="espresso.stats.audience">For Everyone</span>
                     </div>
                 </div>
             </div>
@@ -91,19 +92,19 @@
             <div class="nav-grid">
                 <a href="#safety-first" class="nav-item">
                     <i class="fas fa-shield-alt"></i>
-                    <span>Safety First</span>
+                    <span data-translate="espresso.nav.safety">Safety First</span>
                 </a>
                 <a href="#getting-started" class="nav-item">
                     <i class="fas fa-play"></i>
-                    <span>Getting Started</span>
+                    <span data-translate="espresso.nav.getting-started">Getting Started</span>
                 </a>
                 <a href="#step-by-step" class="nav-item">
                     <i class="fas fa-list-ol"></i>
-                    <span>Step by Step</span>
+                    <span data-translate="espresso.nav.step-by-step">Step by Step</span>
                 </a>
                 <a href="#troubleshooting" class="nav-item">
                     <i class="fas fa-tools"></i>
-                    <span>Troubleshooting</span>
+                    <span data-translate="espresso.nav.troubleshooting">Troubleshooting</span>
                 </a>
             </div>
         </div>
@@ -113,8 +114,8 @@
     <section id="safety-first" class="guide-section">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-shield-alt"></i> Safety First</h2>
-                <p>Before operating the espresso machine, please read these important safety guidelines</p>
+                <h2><i class="fas fa-shield-alt"></i> <span data-translate="espresso.safety.title">Safety First</span></h2>
+                <p data-translate="espresso.safety.desc">Before operating the espresso machine, please read these important safety guidelines</p>
             </div>
             
             <div class="safety-grid">
@@ -122,32 +123,32 @@
                     <div class="safety-icon">
                         <i class="fas fa-exclamation-triangle"></i>
                     </div>
-                    <h4>Hot Surfaces</h4>
-                    <p>The machine gets extremely hot during operation. Never touch the group head, steam wand, or hot plate without protection.</p>
+                    <h4 data-translate="espresso.safety.hot-surfaces.title">Hot Surfaces</h4>
+                    <p data-translate="espresso.safety.hot-surfaces.desc">The machine gets extremely hot during operation. Never touch the group head, steam wand, or hot plate without protection.</p>
                 </div>
                 
                 <div class="safety-item warning">
                     <div class="safety-icon">
                         <i class="fas fa-tint"></i>
                     </div>
-                    <h4>Water Safety</h4>
-                    <p>Always check the water level before use. Never operate the machine without sufficient water in the reservoir.</p>
+                    <h4 data-translate="espresso.safety.water-safety.title">Water Safety</h4>
+                    <p data-translate="espresso.safety.water-safety.desc">Always check the water level before use. Never operate the machine without sufficient water in the reservoir.</p>
                 </div>
                 
                 <div class="safety-item info">
                     <div class="safety-icon">
                         <i class="fas fa-hand-paper"></i>
                     </div>
-                    <h4>Proper Handling</h4>
-                    <p>Use the handles and designated grip areas. Keep the work area clean and dry to prevent slips.</p>
+                    <h4 data-translate="espresso.safety.proper-handling.title">Proper Handling</h4>
+                    <p data-translate="espresso.safety.proper-handling.desc">Use the handles and designated grip areas. Keep the work area clean and dry to prevent slips.</p>
                 </div>
                 
                 <div class="safety-item success">
                     <div class="safety-icon">
                         <i class="fas fa-check-circle"></i>
                     </div>
-                    <h4>Emergency</h4>
-                    <p>Know the location of the power switch and water shut-off. Report any malfunctions immediately.</p>
+                    <h4 data-translate="espresso.safety.emergency.title">Emergency</h4>
+                    <p data-translate="espresso.safety.emergency.desc">Know the location of the power switch and water shut-off. Report any malfunctions immediately.</p>
                 </div>
             </div>
         </div>
@@ -157,8 +158,8 @@
     <section id="getting-started" class="guide-section">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-play"></i> Getting Started</h2>
-                <p>Essential preparations before brewing your first cup</p>
+                <h2><i class="fas fa-play"></i> <span data-translate="espresso.getting-started.title">Getting Started</span></h2>
+                <p data-translate="espresso.getting-started.desc">Essential preparations before brewing your first cup</p>
             </div>
             
             <div class="checklist">
@@ -167,8 +168,8 @@
                         <i class="fas fa-check"></i>
                     </div>
                     <div class="check-content">
-                        <h4>Check Water Level</h4>
-                        <p>Ensure the water reservoir is filled with fresh, cold water. The minimum level should be above the "MIN" line.</p>
+                        <h4 data-translate="espresso.getting-started.check-water.title">Check Water Level</h4>
+                        <p data-translate="espresso.getting-started.check-water.desc">Ensure the water reservoir is filled with fresh, cold water. The minimum level should be above the "MIN" line.</p>
                     </div>
                 </div>
                 
@@ -177,8 +178,8 @@
                         <i class="fas fa-check"></i>
                     </div>
                     <div class="check-content">
-                        <h4>Power On the Machine</h4>
-                        <p>Turn on the main power switch. The indicator light will show when the machine is heating up.</p>
+                        <h4 data-translate="espresso.getting-started.power-on.title">Power On the Machine</h4>
+                        <p data-translate="espresso.getting-started.power-on.desc">Turn on the main power switch. The indicator light will show when the machine is heating up.</p>
                     </div>
                 </div>
                 
@@ -187,8 +188,8 @@
                         <i class="fas fa-check"></i>
                     </div>
                     <div class="check-content">
-                        <h4>Wait for Heating</h4>
-                        <p>Allow 2-3 minutes for the machine to reach optimal brewing temperature. The ready light will indicate when it's ready.</p>
+                        <h4 data-translate="espresso.getting-started.wait-heating.title">Wait for Heating</h4>
+                        <p data-translate="espresso.getting-started.wait-heating.desc">Allow 2-3 minutes for the machine to reach optimal brewing temperature. The ready light will indicate when it's ready.</p>
                     </div>
                 </div>
                 
@@ -197,8 +198,8 @@
                         <i class="fas fa-check"></i>
                     </div>
                     <div class="check-content">
-                        <h4>Prepare Your Cup</h4>
-                        <p>Place a clean espresso cup or shot glass under the group head. Pre-warm if desired.</p>
+                        <h4 data-translate="espresso.getting-started.prepare-cup.title">Prepare Your Cup</h4>
+                        <p data-translate="espresso.getting-started.prepare-cup.desc">Place a clean espresso cup or shot glass under the group head. Pre-warm if desired.</p>
                     </div>
                 </div>
             </div>
@@ -209,18 +210,18 @@
     <section id="step-by-step" class="guide-section">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-list-ol"></i> Step-by-Step Brewing Process</h2>
-                <p>Follow these detailed steps to brew the perfect espresso shot</p>
+                <h2><i class="fas fa-list-ol"></i> <span data-translate="espresso.step-by-step.title">Step-by-Step Brewing Process</span></h2>
+                <p data-translate="espresso.step-by-step.desc">Follow these detailed steps to brew the perfect espresso shot</p>
             </div>
             
             <div class="steps-container">
                 <div class="step-item">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h4>Grind Fresh Coffee</h4>
-                        <p>Use the provided coffee grinder to grind beans to a fine consistency. You'll need about 18-20 grams for a double shot.</p>
+                        <h4 data-translate="espresso.steps.grind.title">Grind Fresh Coffee</h4>
+                        <p data-translate="espresso.steps.grind.desc">Use the provided coffee grinder to grind beans to a fine consistency. You'll need about 18-20 grams for a double shot.</p>
                         <div class="step-tips">
-                            <strong>Tip:</strong> Grind only what you need for immediate use to maintain freshness.
+                            <strong data-translate="espresso.steps.grind.tip-label">Tip:</strong> <span data-translate="espresso.steps.grind.tip">Grind only what you need for immediate use to maintain freshness.</span>
                         </div>
                     </div>
                 </div>
@@ -228,10 +229,10 @@
                 <div class="step-item">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h4>Fill the Portafilter</h4>
-                        <p>Remove the portafilter from the group head. Fill it with the ground coffee, distributing evenly.</p>
+                        <h4 data-translate="espresso.steps.fill.title">Fill the Portafilter</h4>
+                        <p data-translate="espresso.steps.fill.desc">Remove the portafilter from the group head. Fill it with the ground coffee, distributing evenly.</p>
                         <div class="step-tips">
-                            <strong>Note:</strong> Don't overfill - the coffee should be level with the rim.
+                            <strong data-translate="espresso.steps.fill.note-label">Note:</strong> <span data-translate="espresso.steps.fill.note">Don't overfill - the coffee should be level with the rim.</span>
                         </div>
                     </div>
                 </div>
@@ -239,10 +240,10 @@
                 <div class="step-item">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h4>Tamp the Coffee</h4>
-                        <p>Use the tamper to compress the coffee grounds evenly with about 30 pounds of pressure. The surface should be level and smooth.</p>
+                        <h4 data-translate="espresso.steps.tamp.title">Tamp the Coffee</h4>
+                        <p data-translate="espresso.steps.tamp.desc">Use the tamper to compress the coffee grounds evenly with about 30 pounds of pressure. The surface should be level and smooth.</p>
                         <div class="step-tips">
-                            <strong>Important:</strong> Consistent tamping pressure ensures even extraction.
+                            <strong data-translate="espresso.steps.tamp.important-label">Important:</strong> <span data-translate="espresso.steps.tamp.important">Consistent tamping pressure ensures even extraction.</span>
                         </div>
                     </div>
                 </div>
@@ -250,10 +251,10 @@
                 <div class="step-item">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h4>Lock the Portafilter</h4>
-                        <p>Insert the portafilter into the group head and turn clockwise until it's firmly locked in place.</p>
+                        <h4 data-translate="espresso.steps.lock.title">Lock the Portafilter</h4>
+                        <p data-translate="espresso.steps.lock.desc">Insert the portafilter into the group head and turn clockwise until it's firmly locked in place.</p>
                         <div class="step-tips">
-                            <strong>Check:</strong> The portafilter handle should point toward the front or slightly right.
+                            <strong data-translate="espresso.steps.lock.check-label">Check:</strong> <span data-translate="espresso.steps.lock.check">The portafilter handle should point toward the front or slightly right.</span>
                         </div>
                     </div>
                 </div>
@@ -261,10 +262,10 @@
                 <div class="step-item">
                     <div class="step-number">5</div>
                     <div class="step-content">
-                        <h4>Start Extraction</h4>
-                        <p>Press the brew button to start extraction. A good shot should take 25-30 seconds for a double shot.</p>
+                        <h4 data-translate="espresso.steps.extract.title">Start Extraction</h4>
+                        <p data-translate="espresso.steps.extract.desc">Press the brew button to start extraction. A good shot should take 25-30 seconds for a double shot.</p>
                         <div class="step-tips">
-                            <strong>Watch:</strong> The coffee should flow like warm honey, not too fast or too slow.
+                            <strong data-translate="espresso.steps.extract.watch-label">Watch:</strong> <span data-translate="espresso.steps.extract.watch">The coffee should flow like warm honey, not too fast or too slow.</span>
                         </div>
                     </div>
                 </div>
@@ -272,10 +273,10 @@
                 <div class="step-item">
                     <div class="step-number">6</div>
                     <div class="step-content">
-                        <h4>Stop and Serve</h4>
-                        <p>When you have the desired amount (about 2 oz for a double shot), press the button again to stop. Serve immediately.</p>
+                        <h4 data-translate="espresso.steps.serve.title">Stop and Serve</h4>
+                        <p data-translate="espresso.steps.serve.desc">When you have the desired amount (about 2 oz for a double shot), press the button again to stop. Serve immediately.</p>
                         <div class="step-tips">
-                            <strong>Enjoy:</strong> Fresh espresso is best consumed within 1-2 minutes of brewing.
+                            <strong data-translate="espresso.steps.serve.enjoy-label">Enjoy:</strong> <span data-translate="espresso.steps.serve.enjoy">Fresh espresso is best consumed within 1-2 minutes of brewing.</span>
                         </div>
                     </div>
                 </div>
@@ -287,8 +288,8 @@
     <section id="troubleshooting" class="guide-section">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-tools"></i> Troubleshooting Common Issues</h2>
-                <p>Solutions to the most common problems you might encounter</p>
+                <h2><i class="fas fa-tools"></i> <span data-translate="espresso.troubleshooting.title">Troubleshooting Common Issues</span></h2>
+                <p data-translate="espresso.troubleshooting.desc">Solutions to the most common problems you might encounter</p>
             </div>
             
             <div class="troubleshoot-grid">
@@ -296,17 +297,17 @@
                     <div class="trouble-icon">
                         <i class="fas fa-tachometer-alt"></i>
                     </div>
-                    <h4>Coffee Flows Too Fast</h4>
+                    <h4 data-translate="espresso.troubleshoot.fast-flow.title">Coffee Flows Too Fast</h4>
                     <div class="trouble-causes">
-                        <strong>Possible Causes:</strong>
+                        <strong data-translate="espresso.troubleshoot.fast-flow.causes-label">Possible Causes:</strong>
                         <ul>
-                            <li>Coffee ground too coarse</li>
-                            <li>Not enough coffee in portafilter</li>
-                            <li>Insufficient tamping pressure</li>
+                            <li data-translate="espresso.troubleshoot.fast-flow.cause1">Coffee ground too coarse</li>
+                            <li data-translate="espresso.troubleshoot.fast-flow.cause2">Not enough coffee in portafilter</li>
+                            <li data-translate="espresso.troubleshoot.fast-flow.cause3">Insufficient tamping pressure</li>
                         </ul>
                     </div>
                     <div class="trouble-solution">
-                        <strong>Solution:</strong> Use finer grind, add more coffee, or tamp with more pressure.
+                        <strong data-translate="espresso.troubleshoot.fast-flow.solution-label">Solution:</strong> <span data-translate="espresso.troubleshoot.fast-flow.solution">Use finer grind, add more coffee, or tamp with more pressure.</span>
                     </div>
                 </div>
                 
@@ -314,17 +315,17 @@
                     <div class="trouble-icon">
                         <i class="fas fa-hourglass-half"></i>
                     </div>
-                    <h4>Coffee Flows Too Slow</h4>
+                    <h4 data-translate="espresso.troubleshoot.slow-flow.title">Coffee Flows Too Slow</h4>
                     <div class="trouble-causes">
-                        <strong>Possible Causes:</strong>
+                        <strong data-translate="espresso.troubleshoot.slow-flow.causes-label">Possible Causes:</strong>
                         <ul>
-                            <li>Coffee ground too fine</li>
-                            <li>Too much coffee in portafilter</li>
-                            <li>Over-tamping</li>
+                            <li data-translate="espresso.troubleshoot.slow-flow.cause1">Coffee ground too fine</li>
+                            <li data-translate="espresso.troubleshoot.slow-flow.cause2">Too much coffee in portafilter</li>
+                            <li data-translate="espresso.troubleshoot.slow-flow.cause3">Over-tamping</li>
                         </ul>
                     </div>
                     <div class="trouble-solution">
-                        <strong>Solution:</strong> Use coarser grind, reduce coffee amount, or tamp with less pressure.
+                        <strong data-translate="espresso.troubleshoot.slow-flow.solution-label">Solution:</strong> <span data-translate="espresso.troubleshoot.slow-flow.solution">Use coarser grind, reduce coffee amount, or tamp with less pressure.</span>
                     </div>
                 </div>
                 
@@ -332,17 +333,17 @@
                     <div class="trouble-icon">
                         <i class="fas fa-thermometer-empty"></i>
                     </div>
-                    <h4>Coffee Not Hot Enough</h4>
+                    <h4 data-translate="espresso.troubleshoot.not-hot.title">Coffee Not Hot Enough</h4>
                     <div class="trouble-causes">
-                        <strong>Possible Causes:</strong>
+                        <strong data-translate="espresso.troubleshoot.not-hot.causes-label">Possible Causes:</strong>
                         <ul>
-                            <li>Machine not fully heated</li>
-                            <li>Cold cup</li>
-                            <li>Low water temperature</li>
+                            <li data-translate="espresso.troubleshoot.not-hot.cause1">Machine not fully heated</li>
+                            <li data-translate="espresso.troubleshoot.not-hot.cause2">Cold cup</li>
+                            <li data-translate="espresso.troubleshoot.not-hot.cause3">Low water temperature</li>
                         </ul>
                     </div>
                     <div class="trouble-solution">
-                        <strong>Solution:</strong> Wait longer for heating, pre-warm cup, or check temperature settings.
+                        <strong data-translate="espresso.troubleshoot.not-hot.solution-label">Solution:</strong> <span data-translate="espresso.troubleshoot.not-hot.solution">Wait longer for heating, pre-warm cup, or check temperature settings.</span>
                     </div>
                 </div>
                 
@@ -350,17 +351,17 @@
                     <div class="trouble-icon">
                         <i class="fas fa-exclamation-circle"></i>
                     </div>
-                    <h4>No Water Flow</h4>
+                    <h4 data-translate="espresso.troubleshoot.no-water.title">No Water Flow</h4>
                     <div class="trouble-causes">
-                        <strong>Possible Causes:</strong>
+                        <strong data-translate="espresso.troubleshoot.no-water.causes-label">Possible Causes:</strong>
                         <ul>
-                            <li>Empty water reservoir</li>
-                            <li>Blocked group head</li>
-                            <li>Air in system</li>
+                            <li data-translate="espresso.troubleshoot.no-water.cause1">Empty water reservoir</li>
+                            <li data-translate="espresso.troubleshoot.no-water.cause2">Blocked group head</li>
+                            <li data-translate="espresso.troubleshoot.no-water.cause3">Air in system</li>
                         </ul>
                     </div>
                     <div class="trouble-solution">
-                        <strong>Solution:</strong> Refill water, clean group head, or run cleaning cycle.
+                        <strong data-translate="espresso.troubleshoot.no-water.solution-label">Solution:</strong> <span data-translate="espresso.troubleshoot.no-water.solution">Refill water, clean group head, or run cleaning cycle.</span>
                     </div>
                 </div>
             </div>
@@ -371,44 +372,44 @@
     <section class="quick-reference">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-bookmark"></i> Quick Reference Card</h2>
-                <p>Keep these key points in mind for perfect espresso every time</p>
+                <h2><i class="fas fa-bookmark"></i> <span data-translate="espresso.reference.title">Quick Reference Card</span></h2>
+                <p data-translate="espresso.reference.desc">Keep these key points in mind for perfect espresso every time</p>
             </div>
             
             <div class="reference-grid">
                 <div class="ref-card">
-                    <h4>Perfect Timing</h4>
+                    <h4 data-translate="espresso.reference.timing.title">Perfect Timing</h4>
                     <ul>
-                        <li>Heating: 2-3 minutes</li>
-                        <li>Extraction: 25-30 seconds</li>
-                        <li>Serve within: 1-2 minutes</li>
+                        <li data-translate="espresso.reference.timing.heating">Heating: 2-3 minutes</li>
+                        <li data-translate="espresso.reference.timing.extraction">Extraction: 25-30 seconds</li>
+                        <li data-translate="espresso.reference.timing.serve">Serve within: 1-2 minutes</li>
                     </ul>
                 </div>
                 
                 <div class="ref-card">
-                    <h4>Coffee Amounts</h4>
+                    <h4 data-translate="espresso.reference.amounts.title">Coffee Amounts</h4>
                     <ul>
-                        <li>Single shot: 7-9g coffee</li>
-                        <li>Double shot: 18-20g coffee</li>
-                        <li>Yield: 1-2 oz liquid</li>
+                        <li data-translate="espresso.reference.amounts.single">Single shot: 7-9g coffee</li>
+                        <li data-translate="espresso.reference.amounts.double">Double shot: 18-20g coffee</li>
+                        <li data-translate="espresso.reference.amounts.yield">Yield: 1-2 oz liquid</li>
                     </ul>
                 </div>
                 
                 <div class="ref-card">
-                    <h4>Quality Indicators</h4>
+                    <h4 data-translate="espresso.reference.quality.title">Quality Indicators</h4>
                     <ul>
-                        <li>Flow: Like warm honey</li>
-                        <li>Color: Rich, dark brown</li>
-                        <li>Crema: Golden, thick layer</li>
+                        <li data-translate="espresso.reference.quality.flow">Flow: Like warm honey</li>
+                        <li data-translate="espresso.reference.quality.color">Color: Rich, dark brown</li>
+                        <li data-translate="espresso.reference.quality.crema">Crema: Golden, thick layer</li>
                     </ul>
                 </div>
                 
                 <div class="ref-card">
-                    <h4>Safety Reminders</h4>
+                    <h4 data-translate="espresso.reference.safety.title">Safety Reminders</h4>
                     <ul>
-                        <li>Check water level first</li>
-                        <li>Never touch hot surfaces</li>
-                        <li>Clean after each use</li>
+                        <li data-translate="espresso.reference.safety.water">Check water level first</li>
+                        <li data-translate="espresso.reference.safety.hot">Never touch hot surfaces</li>
+                        <li data-translate="espresso.reference.safety.clean">Clean after each use</li>
                     </ul>
                 </div>
             </div>
@@ -418,14 +419,14 @@
     <!-- Navigation to Other Guides -->
     <section class="guide-navigation">
         <div class="container">
-            <h3>Continue Learning</h3>
+            <h3 data-translate="espresso.continue.title">Continue Learning</h3>
             <div class="nav-cards">
                 <a href="recipes.html" class="nav-card">
                     <div class="card-icon">
                         <i class="fas fa-book-open"></i>
                     </div>
-                    <h4>Coffee Recipes</h4>
-                    <p>Learn to make lattes, cappuccinos, and more</p>
+                    <h4 data-translate="espresso.continue.recipes.title">Coffee Recipes</h4>
+                    <p data-translate="espresso.continue.recipes.desc">Learn to make lattes, cappuccinos, and more</p>
                     <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
                 </a>
                 
@@ -433,8 +434,8 @@
                     <div class="card-icon">
                         <i class="fas fa-tools"></i>
                     </div>
-                    <h4>Maintenance Guide</h4>
-                    <p>Keep the machine clean and working perfectly</p>
+                    <h4 data-translate="espresso.continue.maintenance.title">Maintenance Guide</h4>
+                    <p data-translate="espresso.continue.maintenance.desc">Keep the machine clean and working perfectly</p>
                     <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
                 </a>
                 
@@ -442,8 +443,8 @@
                     <div class="card-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h4>Quota & Tips</h4>
-                    <p>Learn about supplies and contribution system</p>
+                    <h4 data-translate="espresso.continue.quota.title">Quota & Tips</h4>
+                    <p data-translate="espresso.continue.quota.desc">Learn about supplies and contribution system</p>
                     <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
                 </a>
             </div>
@@ -454,8 +455,8 @@
     <section class="video-tutorial">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-play-circle"></i> Video Tutorial</h2>
-                <p>Watch this comprehensive video guide for the DeLonghi EC 230 BK espresso machine</p>
+                <h2><i class="fas fa-play-circle"></i> <span data-translate="espresso.video.title">Video Tutorial</span></h2>
+                <p data-translate="espresso.video.desc">Watch this comprehensive video guide for the DeLonghi EC 230 BK espresso machine</p>
             </div>
             <div class="video-container">
                 <div class="video-wrapper">
@@ -468,13 +469,13 @@
                     </iframe>
                 </div>
                 <div class="video-info">
-                    <h3>What You'll Learn</h3>
+                    <h3 data-translate="espresso.video.learn.title">What You'll Learn</h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> Detailed machine setup and preparation</li>
-                        <li><i class="fas fa-check"></i> Step-by-step brewing process</li>
-                        <li><i class="fas fa-check"></i> Steam wand operation for milk frothing</li>
-                        <li><i class="fas fa-check"></i> Common troubleshooting tips</li>
-                        <li><i class="fas fa-check"></i> Proper cleaning and maintenance</li>
+                        <li><i class="fas fa-check"></i> <span data-translate="espresso.video.learn.setup">Detailed machine setup and preparation</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="espresso.video.learn.brewing">Step-by-step brewing process</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="espresso.video.learn.steam">Steam wand operation for milk frothing</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="espresso.video.learn.troubleshoot">Common troubleshooting tips</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="espresso.video.learn.maintenance">Proper cleaning and maintenance</span></li>
                     </ul>
                 </div>
             </div>
@@ -514,5 +515,7 @@
 
     <script src="scripts/main.js"></script>
     <script src="scripts/guide.js"></script>
+    <script src="scripts/language.js"></script>
+    <script src="scripts/analytics.js"></script>
 </body>
 </html> 

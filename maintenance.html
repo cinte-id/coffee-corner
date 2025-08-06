@@ -6,10 +6,11 @@
     <title>Maintenance Guide - Cinte Coffee Corner</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/guide.css">
+    <link rel="stylesheet" href="styles/language.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body data-page-title="maintenance.title">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -21,19 +22,19 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link" data-translate="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="espresso-guide.html" class="nav-link">Espresso Guide</a>
+                    <a href="espresso-guide.html" class="nav-link" data-translate="nav.espresso-guide">Espresso Guide</a>
                 </li>
                 <li class="nav-item">
-                    <a href="recipes.html" class="nav-link">Coffee Recipes</a>
+                    <a href="recipes.html" class="nav-link" data-translate="nav.recipes">Coffee Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a href="maintenance.html" class="nav-link active">Maintenance</a>
+                    <a href="maintenance.html" class="nav-link active" data-translate="nav.maintenance">Maintenance</a>
                 </li>
                 <li class="nav-item">
-                    <a href="quota.html" class="nav-link">Quota & Tips</a>
+                    <a href="quota.html" class="nav-link" data-translate="nav.quota">Quota & Tips</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -49,24 +50,24 @@
         <div class="container">
             <div class="hero-content">
                 <div class="breadcrumb">
-                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="index.html"><i class="fas fa-home"></i> <span data-translate="maintenance.breadcrumb.home">Home</span></a>
                     <span><i class="fas fa-chevron-right"></i></span>
-                    <span>Maintenance Guide</span>
+                    <span data-translate="maintenance.breadcrumb.guide">Maintenance Guide</span>
                 </div>
-                <h1>Machine Maintenance & Cleaning</h1>
-                <p>Keep our espresso machine running smoothly with proper cleaning and maintenance. A well-maintained machine produces better coffee and lasts longer.</p>
+                <h1 data-translate="maintenance.hero.main-title">Machine Maintenance & Cleaning</h1>
+                <p data-translate="maintenance.hero.main-desc">Keep our espresso machine running smoothly with proper cleaning and maintenance. A well-maintained machine produces better coffee and lasts longer.</p>
                 <div class="guide-stats">
                     <div class="stat">
                         <i class="fas fa-calendar-day"></i>
-                        <span>Daily Tasks</span>
+                        <span data-translate="maintenance.stats.daily">Daily Tasks</span>
                     </div>
                     <div class="stat">
                         <i class="fas fa-calendar-week"></i>
-                        <span>Weekly Deep Clean</span>
+                        <span data-translate="maintenance.stats.weekly">Weekly Deep Clean</span>
                     </div>
                     <div class="stat">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>Monthly Service</span>
+                        <span data-translate="maintenance.stats.monthly">Monthly Service</span>
                     </div>
                 </div>
             </div>
@@ -101,8 +102,8 @@
     <section id="daily-cleaning" class="guide-section">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-calendar-day"></i> Daily Cleaning Tasks</h2>
-                <p>Essential cleaning steps after each use to keep the machine hygienic and functioning</p>
+                <h2><i class="fas fa-calendar-day"></i> <span data-translate="maintenance.daily.title">Daily Cleaning Tasks</span></h2>
+                <p data-translate="maintenance.daily.desc">Essential cleaning steps after each use to keep the machine hygienic and functioning</p>
             </div>
             
             <div class="steps-container">
@@ -168,8 +169,8 @@
     <section id="weekly-maintenance" class="guide-section">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-calendar-week"></i> Weekly Deep Cleaning</h2>
-                <p>More thorough cleaning tasks to maintain optimal performance and hygiene</p>
+                <h2><i class="fas fa-calendar-week"></i> <span data-translate="maintenance.weekly.title">Weekly Deep Cleaning</span></h2>
+                <p data-translate="maintenance.weekly.desc">More thorough cleaning tasks to maintain optimal performance and hygiene</p>
             </div>
             
             <div class="checklist">
@@ -519,5 +520,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script src="scripts/language.js"></script>
+    <script src="scripts/analytics.js"></script>
 </body>
 </html> 

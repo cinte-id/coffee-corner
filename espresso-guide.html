@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espresso Machine Guide - Office Coffee Corner</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/guide.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-coffee"></i>
+                <span>Coffee Corner</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="espresso-guide.html" class="nav-link active">Espresso Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recipes.html" class="nav-link">Coffee Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="maintenance.html" class="nav-link">Maintenance</a>
+                </li>
+                <li class="nav-item">
+                    <a href="quota.html" class="nav-link">Quota & Tips</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="guide-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <span><i class="fas fa-chevron-right"></i></span>
+                    <span>Espresso Machine Guide</span>
+                </div>
+                <h1>Espresso Machine Operation Guide</h1>
+                <p>Master the art of making perfect espresso with our step-by-step guide. Learn how to operate the machine safely and efficiently.</p>
+                <div class="guide-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>5-10 min read</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-signal"></i>
+                        <span>Beginner Friendly</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <span>For Everyone</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="quick-nav">
+        <div class="container">
+            <div class="nav-grid">
+                <a href="#safety-first" class="nav-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Safety First</span>
+                </a>
+                <a href="#getting-started" class="nav-item">
+                    <i class="fas fa-play"></i>
+                    <span>Getting Started</span>
+                </a>
+                <a href="#step-by-step" class="nav-item">
+                    <i class="fas fa-list-ol"></i>
+                    <span>Step by Step</span>
+                </a>
+                <a href="#troubleshooting" class="nav-item">
+                    <i class="fas fa-tools"></i>
+                    <span>Troubleshooting</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety First -->
+    <section id="safety-first" class="guide-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-shield-alt"></i> Safety First</h2>
+                <p>Before operating the espresso machine, please read these important safety guidelines</p>
+            </div>
+            
+            <div class="safety-grid">
+                <div class="safety-item danger">
+                    <div class="safety-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h4>Hot Surfaces</h4>
+                    <p>The machine gets extremely hot during operation. Never touch the group head, steam wand, or hot plate without protection.</p>
+                </div>
+                
+                <div class="safety-item warning">
+                    <div class="safety-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h4>Water Safety</h4>
+                    <p>Always check the water level before use. Never operate the machine without sufficient water in the reservoir.</p>
+                </div>
+                
+                <div class="safety-item info">
+                    <div class="safety-icon">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <h4>Proper Handling</h4>
+                    <p>Use the handles and designated grip areas. Keep the work area clean and dry to prevent slips.</p>
+                </div>
+                
+                <div class="safety-item success">
+                    <div class="safety-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h4>Emergency</h4>
+                    <p>Know the location of the power switch and water shut-off. Report any malfunctions immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started -->
+    <section id="getting-started" class="guide-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-play"></i> Getting Started</h2>
+                <p>Essential preparations before brewing your first cup</p>
+            </div>
+            
+            <div class="checklist">
+                <div class="checklist-item">
+                    <div class="check-box">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="check-content">
+                        <h4>Check Water Level</h4>
+                        <p>Ensure the water reservoir is filled with fresh, cold water. The minimum level should be above the "MIN" line.</p>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="check-box">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="check-content">
+                        <h4>Power On the Machine</h4>
+                        <p>Turn on the main power switch. The indicator light will show when the machine is heating up.</p>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="check-box">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="check-content">
+                        <h4>Wait for Heating</h4>
+                        <p>Allow 2-3 minutes for the machine to reach optimal brewing temperature. The ready light will indicate when it's ready.</p>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="check-box">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="check-content">
+                        <h4>Prepare Your Cup</h4>
+                        <p>Place a clean espresso cup or shot glass under the group head. Pre-warm if desired.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step by Step Guide -->
+    <section id="step-by-step" class="guide-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-list-ol"></i> Step-by-Step Brewing Process</h2>
+                <p>Follow these detailed steps to brew the perfect espresso shot</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Grind Fresh Coffee</h4>
+                        <p>Use the provided coffee grinder to grind beans to a fine consistency. You'll need about 18-20 grams for a double shot.</p>
+                        <div class="step-tips">
+                            <strong>Tip:</strong> Grind only what you need for immediate use to maintain freshness.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Fill the Portafilter</h4>
+                        <p>Remove the portafilter from the group head. Fill it with the ground coffee, distributing evenly.</p>
+                        <div class="step-tips">
+                            <strong>Note:</strong> Don't overfill - the coffee should be level with the rim.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Tamp the Coffee</h4>
+                        <p>Use the tamper to compress the coffee grounds evenly with about 30 pounds of pressure. The surface should be level and smooth.</p>
+                        <div class="step-tips">
+                            <strong>Important:</strong> Consistent tamping pressure ensures even extraction.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Lock the Portafilter</h4>
+                        <p>Insert the portafilter into the group head and turn clockwise until it's firmly locked in place.</p>
+                        <div class="step-tips">
+                            <strong>Check:</strong> The portafilter handle should point toward the front or slightly right.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Start Extraction</h4>
+                        <p>Press the brew button to start extraction. A good shot should take 25-30 seconds for a double shot.</p>
+                        <div class="step-tips">
+                            <strong>Watch:</strong> The coffee should flow like warm honey, not too fast or too slow.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h4>Stop and Serve</h4>
+                        <p>When you have the desired amount (about 2 oz for a double shot), press the button again to stop. Serve immediately.</p>
+                        <div class="step-tips">
+                            <strong>Enjoy:</strong> Fresh espresso is best consumed within 1-2 minutes of brewing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section id="troubleshooting" class="guide-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-tools"></i> Troubleshooting Common Issues</h2>
+                <p>Solutions to the most common problems you might encounter</p>
+            </div>
+            
+            <div class="troubleshoot-grid">
+                <div class="trouble-item">
+                    <div class="trouble-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h4>Coffee Flows Too Fast</h4>
+                    <div class="trouble-causes">
+                        <strong>Possible Causes:</strong>
+                        <ul>
+                            <li>Coffee ground too coarse</li>
+                            <li>Not enough coffee in portafilter</li>
+                            <li>Insufficient tamping pressure</li>
+                        </ul>
+                    </div>
+                    <div class="trouble-solution">
+                        <strong>Solution:</strong> Use finer grind, add more coffee, or tamp with more pressure.
+                    </div>
+                </div>
+                
+                <div class="trouble-item">
+                    <div class="trouble-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h4>Coffee Flows Too Slow</h4>
+                    <div class="trouble-causes">
+                        <strong>Possible Causes:</strong>
+                        <ul>
+                            <li>Coffee ground too fine</li>
+                            <li>Too much coffee in portafilter</li>
+                            <li>Over-tamping</li>
+                        </ul>
+                    </div>
+                    <div class="trouble-solution">
+                        <strong>Solution:</strong> Use coarser grind, reduce coffee amount, or tamp with less pressure.
+                    </div>
+                </div>
+                
+                <div class="trouble-item">
+                    <div class="trouble-icon">
+                        <i class="fas fa-thermometer-empty"></i>
+                    </div>
+                    <h4>Coffee Not Hot Enough</h4>
+                    <div class="trouble-causes">
+                        <strong>Possible Causes:</strong>
+                        <ul>
+                            <li>Machine not fully heated</li>
+                            <li>Cold cup</li>
+                            <li>Low water temperature</li>
+                        </ul>
+                    </div>
+                    <div class="trouble-solution">
+                        <strong>Solution:</strong> Wait longer for heating, pre-warm cup, or check temperature settings.
+                    </div>
+                </div>
+                
+                <div class="trouble-item">
+                    <div class="trouble-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <h4>No Water Flow</h4>
+                    <div class="trouble-causes">
+                        <strong>Possible Causes:</strong>
+                        <ul>
+                            <li>Empty water reservoir</li>
+                            <li>Blocked group head</li>
+                            <li>Air in system</li>
+                        </ul>
+                    </div>
+                    <div class="trouble-solution">
+                        <strong>Solution:</strong> Refill water, clean group head, or run cleaning cycle.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Reference -->
+    <section class="quick-reference">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-bookmark"></i> Quick Reference Card</h2>
+                <p>Keep these key points in mind for perfect espresso every time</p>
+            </div>
+            
+            <div class="reference-grid">
+                <div class="ref-card">
+                    <h4>Perfect Timing</h4>
+                    <ul>
+                        <li>Heating: 2-3 minutes</li>
+                        <li>Extraction: 25-30 seconds</li>
+                        <li>Serve within: 1-2 minutes</li>
+                    </ul>
+                </div>
+                
+                <div class="ref-card">
+                    <h4>Coffee Amounts</h4>
+                    <ul>
+                        <li>Single shot: 7-9g coffee</li>
+                        <li>Double shot: 18-20g coffee</li>
+                        <li>Yield: 1-2 oz liquid</li>
+                    </ul>
+                </div>
+                
+                <div class="ref-card">
+                    <h4>Quality Indicators</h4>
+                    <ul>
+                        <li>Flow: Like warm honey</li>
+                        <li>Color: Rich, dark brown</li>
+                        <li>Crema: Golden, thick layer</li>
+                    </ul>
+                </div>
+                
+                <div class="ref-card">
+                    <h4>Safety Reminders</h4>
+                    <ul>
+                        <li>Check water level first</li>
+                        <li>Never touch hot surfaces</li>
+                        <li>Clean after each use</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation to Other Guides -->
+    <section class="guide-navigation">
+        <div class="container">
+            <h3>Continue Learning</h3>
+            <div class="nav-cards">
+                <a href="recipes.html" class="nav-card">
+                    <div class="card-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h4>Coffee Recipes</h4>
+                    <p>Learn to make lattes, cappuccinos, and more</p>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="maintenance.html" class="nav-card">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Maintenance Guide</h4>
+                    <p>Keep the machine clean and working perfectly</p>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="quota.html" class="nav-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Quota & Tips</h4>
+                    <p>Learn about supplies and contribution system</p>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-coffee"></i>
+                        <span>Coffee Corner</span>
+                    </div>
+                    <p>Making great coffee accessible to everyone in our office community.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="espresso-guide.html">Espresso Guide</a></li>
+                        <li><a href="recipes.html">Coffee Recipes</a></li>
+                        <li><a href="maintenance.html">Maintenance</a></li>
+                        <li><a href="quota.html">Quota Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Need Help?</h4>
+                    <p>If you encounter any issues with the coffee machine or have suggestions, please contact the office administration.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Office Coffee Corner. Made with ❤️ for our coffee-loving team.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/guide.js"></script>
+</body>
+</html> 

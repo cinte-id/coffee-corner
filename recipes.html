@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Recipes - Office Coffee Corner</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/guide.css">
+    <link rel="stylesheet" href="styles/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-coffee"></i>
+                <span>Coffee Corner</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="espresso-guide.html" class="nav-link">Espresso Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recipes.html" class="nav-link active">Coffee Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="maintenance.html" class="nav-link">Maintenance</a>
+                </li>
+                <li class="nav-item">
+                    <a href="quota.html" class="nav-link">Quota & Tips</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="guide-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <span><i class="fas fa-chevron-right"></i></span>
+                    <span>Coffee Recipes</span>
+                </div>
+                <h1>Coffee Recipes & Drink Guide</h1>
+                <p>Discover delicious coffee drinks you can make with our espresso machine. From classic espresso to creamy lattes and cappuccinos.</p>
+                <div class="guide-stats">
+                    <div class="stat">
+                        <i class="fas fa-coffee"></i>
+                        <span>8 Recipes</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>2-5 min each</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-star"></i>
+                        <span>All Skill Levels</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Categories -->
+    <section class="recipe-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Perfect Drink</h2>
+                <p>Filter recipes by type and difficulty level</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Recipes</button>
+                <button class="filter-btn" data-filter="espresso">Espresso Based</button>
+                <button class="filter-btn" data-filter="milk">Milk Drinks</button>
+                <button class="filter-btn" data-filter="specialty">Specialty</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Grid -->
+    <section class="recipes-grid">
+        <div class="container">
+            <!-- Espresso -->
+            <div class="recipe-card" data-category="espresso" data-difficulty="easy">
+                <div class="recipe-image">
+                    <div class="recipe-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="difficulty-badge easy">Easy</div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Classic Espresso</h3>
+                    <p>The foundation of all coffee drinks - pure, concentrated coffee perfection.</p>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 2 min</span>
+                        <span><i class="fas fa-users"></i> 1 serving</span>
+                    </div>
+                    <button class="recipe-btn" onclick="openRecipe('espresso')">View Recipe</button>
+                </div>
+            </div>
+
+            <!-- Americano -->
+            <div class="recipe-card" data-category="espresso" data-difficulty="easy">
+                <div class="recipe-image">
+                    <div class="recipe-icon">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <div class="difficulty-badge easy">Easy</div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Americano</h3>
+                    <p>Diluted espresso that's perfect for those who prefer a milder coffee taste.</p>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 3 min</span>
+                        <span><i class="fas fa-users"></i> 1 serving</span>
+                    </div>
+                    <button class="recipe-btn" onclick="openRecipe('americano')">View Recipe</button>
+                </div>
+            </div>
+
+            <!-- Cappuccino -->
+            <div class="recipe-card" data-category="milk" data-difficulty="medium">
+                <div class="recipe-image">
+                    <div class="recipe-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="difficulty-badge medium">Medium</div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Cappuccino</h3>
+                    <p>Equal parts espresso, steamed milk, and milk foam - the perfect balance.</p>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 4 min</span>
+                        <span><i class="fas fa-users"></i> 1 serving</span>
+                    </div>
+                    <button class="recipe-btn" onclick="openRecipe('cappuccino')">View Recipe</button>
+                </div>
+            </div>
+
+            <!-- Latte -->
+            <div class="recipe-card" data-category="milk" data-difficulty="medium">
+                <div class="recipe-image">
+                    <div class="recipe-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="difficulty-badge medium">Medium</div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Latte</h3>
+                    <p>Smooth and creamy with more milk than cappuccino - perfect for milk lovers.</p>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 5 min</span>
+                        <span><i class="fas fa-users"></i> 1 serving</span>
+                    </div>
+                    <button class="recipe-btn" onclick="openRecipe('latte')">View Recipe</button>
+                </div>
+            </div>
+
+            <!-- Macchiato -->
+            <div class="recipe-card" data-category="specialty" data-difficulty="medium">
+                <div class="recipe-image">
+                    <div class="recipe-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="difficulty-badge medium">Medium</div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Macchiato</h3>
+                    <p>Espresso "marked" with a dollop of foamed milk - strong with a creamy touch.</p>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 3 min</span>
+                        <span><i class="fas fa-users"></i> 1 serving</span>
+                    </div>
+                    <button class="recipe-btn" onclick="openRecipe('macchiato')">View Recipe</button>
+                </div>
+            </div>
+
+            <!-- Mocha -->
+            <div class="recipe-card" data-category="specialty" data-difficulty="medium">
+                <div class="recipe-image">
+                    <div class="recipe-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="difficulty-badge medium">Medium</div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Mocha</h3>
+                    <p>Coffee meets chocolate - a sweet treat that combines the best of both worlds.</p>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 5 min</span>
+                        <span><i class="fas fa-users"></i> 1 serving</span>
+                    </div>
+                    <button class="recipe-btn" onclick="openRecipe('mocha')">View Recipe</button>
+                </div>
+            </div>
+
+            <!-- Flat White -->
+            <div class="recipe-card" data-category="milk" data-difficulty="hard">
+                <div class="recipe-image">
+                    <div class="recipe-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="difficulty-badge hard">Advanced</div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Flat White</h3>
+                    <p>Double shot with microfoam milk - stronger than latte, smoother than cappuccino.</p>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 5 min</span>
+                        <span><i class="fas fa-users"></i> 1 serving</span>
+                    </div>
+                    <button class="recipe-btn" onclick="openRecipe('flatwhite')">View Recipe</button>
+                </div>
+            </div>
+
+            <!-- Cortado -->
+            <div class="recipe-card" data-category="specialty" data-difficulty="hard">
+                <div class="recipe-image">
+                    <div class="recipe-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="difficulty-badge hard">Advanced</div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Cortado</h3>
+                    <p>Equal parts espresso and warm milk - perfectly balanced Spanish-style coffee.</p>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 4 min</span>
+                        <span><i class="fas fa-users"></i> 1 serving</span>
+                    </div>
+                    <button class="recipe-btn" onclick="openRecipe('cortado')">View Recipe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milk Steaming Guide -->
+    <section class="milk-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-thermometer-half"></i> Milk Steaming Basics</h2>
+                <p>Essential techniques for creating perfect milk foam and texture</p>
+            </div>
+            
+            <div class="milk-steps">
+                <div class="milk-step">
+                    <div class="step-icon">
+                        <i class="fas fa-thermometer-empty"></i>
+                    </div>
+                    <h4>Start Cold</h4>
+                    <p>Use cold milk straight from the refrigerator. Cold milk steams better and creates more foam.</p>
+                </div>
+                
+                <div class="milk-step">
+                    <div class="step-icon">
+                        <i class="fas fa-fill"></i>
+                    </div>
+                    <h4>Fill Pitcher</h4>
+                    <p>Fill the milk pitcher about 1/3 full. This gives room for the milk to expand as it foams.</p>
+                </div>
+                
+                <div class="milk-step">
+                    <div class="step-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h4>Create Foam</h4>
+                    <p>Keep the steam wand tip just below the surface for the first few seconds to create foam.</p>
+                </div>
+                
+                <div class="milk-step">
+                    <div class="step-icon">
+                        <i class="fas fa-thermometer-three-quarters"></i>
+                    </div>
+                    <h4>Heat Through</h4>
+                    <p>Plunge the wand deeper to heat the milk to 150-160°F. The pitcher should be too hot to hold.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Modal Template -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Recipe Title</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="recipe-details">
+                    <div class="recipe-info">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span id="modalTime">Time</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-signal"></i>
+                            <span id="modalDifficulty">Difficulty</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span id="modalServing">Serving</span>
+                        </div>
+                    </div>
+                    
+                    <div class="ingredients">
+                        <h3>Ingredients</h3>
+                        <ul id="modalIngredients">
+                            <!-- Ingredients will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <div class="instructions">
+                        <h3>Instructions</h3>
+                        <ol id="modalInstructions">
+                            <!-- Instructions will be populated by JavaScript -->
+                        </ol>
+                    </div>
+                    
+                    <div class="tips">
+                        <h3><i class="fas fa-lightbulb"></i> Pro Tips</h3>
+                        <div id="modalTips">
+                            <!-- Tips will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coffee Ratios Chart -->
+    <section class="ratios-chart">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-chart-pie"></i> Coffee Drink Ratios</h2>
+                <p>Visual guide to the composition of popular coffee drinks</p>
+            </div>
+            
+            <div class="ratios-grid">
+                <div class="ratio-card">
+                    <h4>Espresso</h4>
+                    <div class="ratio-visual">
+                        <div class="ratio-bar">
+                            <div class="ratio-segment espresso" style="width: 100%;">100% Espresso</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ratio-card">
+                    <h4>Americano</h4>
+                    <div class="ratio-visual">
+                        <div class="ratio-bar">
+                            <div class="ratio-segment espresso" style="width: 25%;">25% Espresso</div>
+                            <div class="ratio-segment water" style="width: 75%;">75% Hot Water</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ratio-card">
+                    <h4>Cappuccino</h4>
+                    <div class="ratio-visual">
+                        <div class="ratio-bar">
+                            <div class="ratio-segment espresso" style="width: 33%;">33% Espresso</div>
+                            <div class="ratio-segment milk" style="width: 33%;">33% Steamed Milk</div>
+                            <div class="ratio-segment foam" style="width: 34%;">34% Milk Foam</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ratio-card">
+                    <h4>Latte</h4>
+                    <div class="ratio-visual">
+                        <div class="ratio-bar">
+                            <div class="ratio-segment espresso" style="width: 20%;">20% Espresso</div>
+                            <div class="ratio-segment milk" style="width: 70%;">70% Steamed Milk</div>
+                            <div class="ratio-segment foam" style="width: 10%;">10% Milk Foam</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation to Other Guides -->
+    <section class="guide-navigation">
+        <div class="container">
+            <h3>Continue Learning</h3>
+            <div class="nav-cards">
+                <a href="espresso-guide.html" class="nav-card">
+                    <div class="card-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h4>Espresso Guide</h4>
+                    <p>Master the basics of espresso making</p>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="maintenance.html" class="nav-card">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Maintenance Guide</h4>
+                    <p>Keep the machine clean and working perfectly</p>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="quota.html" class="nav-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Quota & Tips</h4>
+                    <p>Learn about supplies and contribution system</p>
+                    <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-coffee"></i>
+                        <span>Coffee Corner</span>
+                    </div>
+                    <p>Making great coffee accessible to everyone in our office community.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="espresso-guide.html">Espresso Guide</a></li>
+                        <li><a href="recipes.html">Coffee Recipes</a></li>
+                        <li><a href="maintenance.html">Maintenance</a></li>
+                        <li><a href="quota.html">Quota Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Need Help?</h4>
+                    <p>If you encounter any issues with the coffee machine or have suggestions, please contact the office administration.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Office Coffee Corner. Made with ❤️ for our coffee-loving team.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/recipes.js"></script>
+</body>
+</html> 

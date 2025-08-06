@@ -95,6 +95,20 @@ class LanguageManager {
                 'home.cta.desc': 'Start with our comprehensive espresso machine guide and work your way up to creating amazing coffee drinks',
                 'home.cta.button': 'Get Started Now',
                 
+                // Office Coffee Projects
+                'home.projects.title': 'Office Coffee Projects & Initiatives',
+                'home.projects.desc': 'Discover our community-driven coffee projects and how you can contribute to making our coffee corner even better',
+                'home.projects.sustainability.title': 'Sustainability Initiative',
+                'home.projects.sustainability.desc': 'Our ongoing project to reduce waste, source ethical coffee beans, and implement eco-friendly practices in our coffee corner.',
+                'home.projects.training.title': 'Coffee Skills Training',
+                'home.projects.training.desc': 'Monthly workshops to help colleagues master advanced coffee techniques and become coffee ambassadors.',
+                'home.projects.optimization.title': 'Equipment Optimization',
+                'home.projects.optimization.desc': 'Continuous improvement of our coffee setup based on usage patterns and community feedback.',
+                'home.projects.community.title': 'Coffee Community Fund',
+                'home.projects.community.desc': 'Supporting local coffee farmers and contributing to coffee-growing communities worldwide.',
+                'home.projects.get-involved.title': 'Want to Get Involved?',
+                'home.projects.get-involved.desc': 'Join our coffee community initiatives and help make our office coffee corner the best it can be!',
+                
                 // Espresso Guide
                 'espresso.title': 'DeLonghi EC 230 BK Operation Guide - Cinte Coffee Corner',
                 'espresso.breadcrumb.home': 'Home',
@@ -122,6 +136,25 @@ class LanguageManager {
                 'espresso.video.learn.steam': 'Steam wand operation for milk frothing',
                 'espresso.video.learn.troubleshoot': 'Common troubleshooting tips',
                 'espresso.video.learn.maintenance': 'Proper cleaning and maintenance',
+                
+                // Clean After Use CTA
+                'espresso.clean-cta.title': '🎉 Great Job! Now Clean After Use',
+                'espresso.clean-cta.desc': 'You\'ve mastered making espresso! The final and most important step is cleaning up after each use. This keeps our machine in perfect condition for everyone.',
+                'espresso.clean-cta.time.title': 'Only 2 Minutes',
+                'espresso.clean-cta.time.desc': 'Quick cleanup routine that makes a huge difference',
+                'espresso.clean-cta.courtesy.title': 'Be Courteous',
+                'espresso.clean-cta.courtesy.desc': 'Leave a clean workspace for the next coffee lover',
+                'espresso.clean-cta.machine.title': 'Protect Our Machine',
+                'espresso.clean-cta.machine.desc': 'Proper cleaning extends machine life and improves coffee quality',
+                'espresso.clean-cta.steps.title': 'Essential Steps After Making Espresso:',
+                'espresso.clean-cta.step1.title': 'Clean Portafilter',
+                'espresso.clean-cta.step1.desc': 'Remove and rinse while warm',
+                'espresso.clean-cta.step2.title': 'Clean Steam Wand',
+                'espresso.clean-cta.step2.desc': 'Purge and wipe if you used milk',
+                'espresso.clean-cta.step3.title': 'Wipe Surfaces',
+                'espresso.clean-cta.step3.desc': 'Clean counter and grinder area',
+                'espresso.clean-cta.button.main': 'View Complete Cleaning Guide',
+                'espresso.clean-cta.button.recipes': 'Explore Coffee Recipes',
                 'espresso.safety.title': 'Safety First',
                 'espresso.safety.desc': 'Before operating the espresso machine, please read these important safety guidelines',
                 'espresso.getting-started.title': 'Getting Started',
@@ -287,6 +320,10 @@ class LanguageManager {
                 'maintenance.stats.weekly': 'Weekly Deep Clean',
                 'maintenance.stats.monthly': 'Monthly Service',
                 
+                // Post-Use Cleaning
+                'maintenance.post-use.title': 'Clean Immediately After Each Use',
+                'maintenance.post-use.desc': 'Essential 2-minute cleanup routine to maintain hygiene and prepare for the next user',
+                
                 // Quota Page
                 'quota.title': 'Quota & Tips - Cinte Coffee Corner',
                 'quota.hero.title': 'Supply Quota & Contribution System',
@@ -382,6 +419,25 @@ class LanguageManager {
                 'espresso.video.learn.troubleshoot': 'Tips kalau ada masalah',
                 'espresso.video.learn.maintenance': 'Cara bersihin dan rawat mesin',
                 
+                // Clean After Use CTA - Indonesian
+                'espresso.clean-cta.title': '🎉 Keren! Sekarang Bersihin Habis Dipake',
+                'espresso.clean-cta.desc': 'Kamu udah jago bikin espresso! Langkah terakhir dan paling penting adalah bersihin setelah dipake. Ini bikin mesin kita tetep perfect buat semua orang.',
+                'espresso.clean-cta.time.title': 'Cuma 2 Menit',
+                'espresso.clean-cta.time.desc': 'Rutinitas bersihin cepat yang beda banget dampaknya',
+                'espresso.clean-cta.courtesy.title': 'Jadi Orang Baik',
+                'espresso.clean-cta.courtesy.desc': 'Tinggalin area kerja yang bersih buat pecinta kopi selanjutnya',
+                'espresso.clean-cta.machine.title': 'Jaga Mesin Kita',
+                'espresso.clean-cta.machine.desc': 'Bersihin yang bener bikin mesin awet dan kopi makin enak',
+                'espresso.clean-cta.steps.title': 'Langkah Penting Setelah Bikin Espresso:',
+                'espresso.clean-cta.step1.title': 'Bersihin Portafilter',
+                'espresso.clean-cta.step1.desc': 'Lepas dan bilas selagi hangat',
+                'espresso.clean-cta.step2.title': 'Bersihin Steam Wand',
+                'espresso.clean-cta.step2.desc': 'Semprot dan lap kalau habis pake susu',
+                'espresso.clean-cta.step3.title': 'Lap Permukaan',
+                'espresso.clean-cta.step3.desc': 'Bersihin meja dan area grinder',
+                'espresso.clean-cta.button.main': 'Lihat Panduan Bersihin Lengkap',
+                'espresso.clean-cta.button.recipes': 'Eksplorasi Resep Kopi',
+                
                 // Footer
                 'footer.tagline': 'Bikin kopi enak jadi gampang buat semua orang di kantor kita.',
                 'footer.quick-links': 'Link Cepat',
@@ -432,6 +488,216 @@ class LanguageManager {
                 'maintenance.stats.daily': 'Tugas Harian',
                 'maintenance.stats.weekly': 'Bersihin Mendalam Mingguan',
                 'maintenance.stats.monthly': 'Service Bulanan',
+                
+                // Post-Use Cleaning - Indonesian
+                'maintenance.post-use.title': 'Bersihin Langsung Setelah Dipake',
+                'maintenance.post-use.desc': 'Rutinitas bersihin penting 2 menit buat jaga kebersihan dan siap-siapkan buat pengguna selanjutnya',
+                
+                // Quick Navigation - Indonesian
+                'maintenance.nav.post-use': 'Setelah Dipake',
+                'maintenance.nav.daily': 'Bersihin Harian',
+                'maintenance.nav.weekly': 'Tugas Mingguan',
+                'maintenance.nav.monthly': 'Service Bulanan',
+                'maintenance.nav.troubleshooting': 'Kalau Ada Masalah',
+                
+                // Post-Use Cleaning Details - Indonesian
+                'maintenance.post-use.priority-badge': 'Paling Penting',
+                'maintenance.post-use.portafilter.title': 'Bersihin Portafilter Langsung',
+                'maintenance.post-use.portafilter.time': '30 detik',
+                'maintenance.post-use.portafilter.step1': 'Lepas portafilter selagi masih hangat (lebih gampang dibersihin)',
+                'maintenance.post-use.portafilter.step2': 'Ketok-ketok buat keluarin ampas kopi ke tempat sampah/kompos',
+                'maintenance.post-use.portafilter.step3': 'Bilas saringan sampai bersih pake air panas',
+                'maintenance.post-use.portafilter.step4': 'Pake sikat buat gosok sisa-sisa kopi yang bandel',
+                'maintenance.post-use.portafilter.step5': 'Kering-keringin terus pasang lagi ke mesin',
+                'maintenance.post-use.portafilter.tip': 'Tips Pro: Jangan pernah ninggalin ampas kopi di portafilter - bakal jadi asam dan noda logamnya.',
+                
+                'maintenance.post-use.steam.title': 'Bersihin Steam Wand Dalam-Dalam',
+                'maintenance.post-use.steam.time': '45 detik',
+                'maintenance.post-use.steam.step1': 'Semprotin steam wand selama 3-4 detik buat bersihin sisa susu',
+                'maintenance.post-use.steam.step2': 'Lap bagian luar pake kain mikrofiber yang lembab',
+                'maintenance.post-use.steam.step3': 'Bersihin sisa susu dari ujung wand dan sekitarnya',
+                'maintenance.post-use.steam.step4': 'Cek ada penumpukan susu di bagian bawah',
+                'maintenance.post-use.steam.step5': 'Semprot terakhir buat pastiin steam keluar lancar',
+                'maintenance.post-use.steam.warning': 'Penting Banget: Susu kering bikin bakteri dan nyumbat lubang steam. Bersihin langsung setelah dipake!',
+                
+                'maintenance.post-use.workspace.title': 'Bersihin Area Kerja',
+                'maintenance.post-use.workspace.time': '45 detik',
+                'maintenance.post-use.workspace.step1': 'Lap permukaan meja buat bersihin ampas kopi dan tumpahan',
+                'maintenance.post-use.workspace.step2': 'Bersihin area sekitar grinder tempat ampas berserakan',
+                'maintenance.post-use.workspace.step3': 'Kosongin drip tray kalau udah kumpul air',
+                'maintenance.post-use.workspace.step4': 'Cek area lantai ada ampas kopi yang jatoh',
+                'maintenance.post-use.workspace.step5': 'Kembaliin alat-alat ke tempatnya',
+                'maintenance.post-use.workspace.courtesy': 'Sopan Santun: Area kerja yang bersih adalah hadiah buat pecinta kopi selanjutnya!',
+                
+                // Post-Use Checklist - Indonesian
+                'maintenance.post-use.checklist.title': 'Checklist Cepat Setelah Dipake',
+                'maintenance.post-use.checklist.item1': 'Portafilter dibersihkan dan ampas dibuang',
+                'maintenance.post-use.checklist.item2': 'Steam wand disemprot dan dilap bersih',
+                'maintenance.post-use.checklist.item3': 'Meja dan area grinder dilap',
+                'maintenance.post-use.checklist.item4': 'Gak ada ampas kopi di lantai atau permukaan',
+                'maintenance.post-use.checklist.item5': 'Semua alat dikembaliin ke tempat yang bener',
+                'maintenance.post-use.checklist.total-time': 'Total Waktu: Di bawah 2 menit',
+                'maintenance.post-use.checklist.impact': 'Dampak: Beda banget buat semua orang!',
+                
+                // Daily Cleaning Details - Indonesian
+                'maintenance.daily.step1.title': 'Bersihin Portafilter',
+                'maintenance.daily.step1.desc': 'Lepas portafilter dan bilas sampai bersih pake air panas. Pake sikat pembersih buat bersihin sisa kopi dari saringan.',
+                'maintenance.daily.step1.tip': 'Penting: Jangan pake sabun di portafilter - air panas dan gosok aja udah cukup.',
+                
+                'maintenance.daily.step2.title': 'Siram Group Head',
+                'maintenance.daily.step2.desc': 'Jalanin shot kosong (tanpa kopi) buat siram sisa minyak kopi dan partikel dari group head.',
+                'maintenance.daily.step2.tip': 'Tips: Ini juga bantu jaga suhu yang tepat buat pengguna selanjutnya.',
+                
+                'maintenance.daily.step3.title': 'Bersihin Steam Wand',
+                'maintenance.daily.step3.desc': 'Lap steam wand pake kain lembab dan semprot sebentar buat bersihin sisa susu. Ini mencegah penumpukan bakteri.',
+                'maintenance.daily.step3.tip': 'Kritis: Selalu lakuin ini langsung setelah steam susu - susu kering lebih susah dibersihin.',
+                
+                'maintenance.daily.step4.title': 'Bersihin Permukaan & Ampas Menyeluruh',
+                'maintenance.daily.step4.desc': 'Bersihin semua permukaan tempat ampas kopi berserakan - sekitar grinder, di meja, dan cek lantai. Pake kain lembab buat permukaan dan sapu/vacuum buat lantai.',
+                'maintenance.daily.step4.tips.title': 'Tips Bersihin Pro:',
+                'maintenance.daily.step4.tip1': 'Ampas kopi nempel di permukaan basah - kering dulu, baru lap',
+                'maintenance.daily.step4.tip2': 'Cek belakang mesin tempat ampas suka sembunyi',
+                'maintenance.daily.step4.tip3': 'Pake sikat kecil buat keluarin ampas dari celah-celah mesin',
+                'maintenance.daily.step4.tip4': 'Jangan lupa area di bawah dosing cup grinder',
+                
+                'maintenance.daily.step5.title': 'Kosongin dan Bilas Drip Tray',
+                'maintenance.daily.step5.desc': 'Lepas drip tray, kosongin, dan bilas cepat. Pasang lagi kalau udah bersih dan kering.',
+                'maintenance.daily.step5.tip': 'Kebersihan: Air yang menggenang di drip tray bisa jadi sarang bakteri dan bau.',
+                
+                // Weekly Maintenance - Indonesian
+                'maintenance.weekly.item1.title': 'Bersihin Water Reservoir Dalam-Dalam',
+                'maintenance.weekly.item1.desc': 'Lepas water reservoir, cuci bersih pake air sabun hangat, bilas sampai bersih, dan isi ulang pake air segar. Cek ada penumpukan mineral.',
+                
+                'maintenance.weekly.item2.title': 'Gosok Drip Tray',
+                'maintenance.weekly.item2.desc': 'Cuci drip tray sampai bersih pake air sabun hangat. Pake sikat buat bersihin noda atau penumpukan yang bandel.',
+                
+                'maintenance.weekly.item3.title': 'Bersihin Steam Wand Dalam-Dalam',
+                'maintenance.weekly.item3.desc': 'Rendam ujung steam wand di cairan pembersih susu selama 10 menit, terus gosok dan bilas sampai bersih. Ini bersihin penumpukan protein susu.',
+                
+                'maintenance.weekly.item4.title': 'Bersihin Coffee Grinder',
+                'maintenance.weekly.item4.desc': 'Kosongin hopper biji, lap bersih, dan pake tablet pembersih grinder kalau ada. Bersihin burr sesuai instruksi pabrik.',
+                
+                'maintenance.weekly.item5.title': 'Poles Bagian Luar',
+                'maintenance.weekly.item5.desc': 'Bersihin bagian luar pake pembersih stainless steel yang sesuai. Poles buat bersihin sidik jari dan noda air biar keliatan profesional.',
+                
+                // Monthly Service - Indonesian
+                'maintenance.monthly.title': 'Service Mendalam Bulanan',
+                'maintenance.monthly.desc': 'Tugas perawatan komprehensif buat cegah masalah dan perpanjang umur mesin',
+                
+                'maintenance.monthly.descaling.title': 'Proses Descaling',
+                'maintenance.monthly.descaling.desc': 'Bersihin penumpukan mineral dari komponen internal pake cairan descaling. Ini penting banget buat umur mesin dan rasa kopi.',
+                'maintenance.monthly.descaling.step1': 'Campur cairan descaling sesuai instruksi',
+                'maintenance.monthly.descaling.step2': 'Isi water reservoir pake cairan',
+                'maintenance.monthly.descaling.step3': 'Jalanin beberapa siklus brewing sesuai petunjuk',
+                'maintenance.monthly.descaling.step4': 'Bilas sampai bersih pake air segar',
+                'maintenance.monthly.descaling.step5': 'Tes rasa sebelum dipake normal',
+                
+                'maintenance.monthly.component.title': 'Cek Komponen Internal',
+                'maintenance.monthly.component.desc': 'Periksa gasket, seal, dan bagian yang bergerak ada keausan. Ganti komponen yang rusak buat cegah bocor dan jaga tekanan.',
+                'maintenance.monthly.component.check1': 'Cek kondisi gasket portafilter',
+                'maintenance.monthly.component.check2': 'Periksa saluran air ada bocor',
+                'maintenance.monthly.component.check3': 'Tes pembacaan pressure gauge',
+                'maintenance.monthly.component.check4': 'Pastiin stabilitas suhu',
+                'maintenance.monthly.component.check5': 'Dengerin ada suara aneh',
+                
+                'maintenance.monthly.calibration.title': 'Cek Kalibrasi',
+                'maintenance.monthly.calibration.desc': 'Pastiin setting suhu dan tekanan dalam rentang optimal. Sesuaikan kalau perlu buat hasil ekstraksi terbaik.',
+                'maintenance.monthly.calibration.check1': 'Ukur suhu brewing (195-205°F)',
+                'maintenance.monthly.calibration.check2': 'Cek tekanan brewing (9 bar)',
+                'maintenance.monthly.calibration.check3': 'Tes timing ekstraksi',
+                'maintenance.monthly.calibration.check4': 'Pastiin tekanan steam',
+                'maintenance.monthly.calibration.check5': 'Catat penyesuaian yang dilakukan',
+                
+                // Cleaning Supplies - Indonesian
+                'maintenance.supplies.title': 'Alat Pembersih Penting',
+                'maintenance.supplies.desc': 'Barang-barang yang kamu butuhin buat jaga mesin kopi kita dalam kondisi sempurna',
+                
+                'maintenance.supplies.daily.title': 'Alat Harian',
+                'maintenance.supplies.daily.item1': 'Kain mikrofiber',
+                'maintenance.supplies.daily.item2': 'Sikat pembersih (group head)',
+                'maintenance.supplies.daily.item3': 'Sabun cuci piring ringan',
+                'maintenance.supplies.daily.item4': 'Air bersih',
+                
+                'maintenance.supplies.weekly.title': 'Alat Mingguan',
+                'maintenance.supplies.weekly.item1': 'Pembersih saluran susu',
+                'maintenance.supplies.weekly.item2': 'Poles stainless steel',
+                'maintenance.supplies.weekly.item3': 'Tablet pembersih grinder',
+                'maintenance.supplies.weekly.item4': 'Cairan sanitasi',
+                
+                'maintenance.supplies.monthly.title': 'Alat Bulanan',
+                'maintenance.supplies.monthly.item1': 'Cairan descaling',
+                'maintenance.supplies.monthly.item2': 'Pengganti filter air',
+                'maintenance.supplies.monthly.item3': 'Gasket pengganti',
+                'maintenance.supplies.monthly.item4': 'Alat kalibrasi',
+                
+                // Warning Signs - Indonesian
+                'maintenance.warning.title': 'Tanda Bahaya & Solusi',
+                'maintenance.warning.desc': 'Kenali tanda-tanda ini yang nunjukin perawatan diperlukan',
+                
+                'maintenance.warning.urgent.title': 'Perlu Tindakan Langsung',
+                'maintenance.warning.urgent.item1': 'Gak ada aliran air: Cek reservoir, bersihin group head',
+                'maintenance.warning.urgent.item2': 'Suara aneh: Stop pake, hubungi maintenance',
+                'maintenance.warning.urgent.item3': 'Bocor air: Matiin mesin, lapor langsung',
+                'maintenance.warning.urgent.item4': 'Masalah listrik: Cabut dan lapor',
+                
+                'maintenance.warning.moderate.title': 'Jadwalin Maintenance Segera',
+                'maintenance.warning.moderate.item1': 'Ekstraksi lambat: Perlu descaling',
+                'maintenance.warning.moderate.item2': 'Rasa pahit: Perlu bersihin dalam',
+                'maintenance.warning.moderate.item3': 'Steam lemah: Steam wand tersumbat',
+                'maintenance.warning.moderate.item4': 'Masalah suhu: Perlu kalibrasi',
+                
+                'maintenance.warning.minor.title': 'Perawatan Rutin',
+                'maintenance.warning.minor.item1': 'Penumpukan mineral: Jadwal descaling rutin',
+                'maintenance.warning.minor.item2': 'Sisa kopi: Rutinitas bersihin harian',
+                'maintenance.warning.minor.item3': 'Tampilan kusam: Poles mingguan',
+                'maintenance.warning.minor.item4': 'Shot gak konsisten: Cek setting grinder',
+                
+                // Maintenance Schedule - Indonesian
+                'maintenance.schedule.title': 'Jadwal Perawatan',
+                'maintenance.schedule.desc': 'Ikutin jadwal ini buat jaga mesin kopi kita dalam kondisi sempurna',
+                'maintenance.schedule.header.task': 'Tugas',
+                'maintenance.schedule.header.frequency': 'Frekuensi',
+                'maintenance.schedule.header.time': 'Waktu Dibutuhkan',
+                'maintenance.schedule.header.responsibility': 'Tanggung Jawab',
+                
+                'maintenance.schedule.task1': 'Bersihin dasar setelah dipake',
+                'maintenance.schedule.freq1': 'Setelah tiap dipake',
+                'maintenance.schedule.time1': '2-3 menit',
+                'maintenance.schedule.resp1': 'Setiap pengguna',
+                
+                'maintenance.schedule.task2': 'Bersihin steam wand dalam',
+                'maintenance.schedule.freq2': 'Harian',
+                'maintenance.schedule.time2': '5 menit',
+                'maintenance.schedule.resp2': 'Pengguna terakhir hari itu',
+                
+                'maintenance.schedule.task3': 'Refresh water reservoir',
+                'maintenance.schedule.freq3': 'Mingguan',
+                'maintenance.schedule.time3': '10 menit',
+                'maintenance.schedule.resp3': 'Sukarelawan',
+                
+                'maintenance.schedule.task4': 'Bersihin dalam lengkap',
+                'maintenance.schedule.freq4': 'Mingguan',
+                'maintenance.schedule.time4': '30 menit',
+                'maintenance.schedule.resp4': 'Sukarelawan',
+                
+                'maintenance.schedule.task5': 'Proses descaling',
+                'maintenance.schedule.freq5': 'Bulanan',
+                'maintenance.schedule.time5': '45 menit',
+                'maintenance.schedule.resp5': 'Admin kantor',
+                
+                'maintenance.schedule.task6': 'Service profesional',
+                'maintenance.schedule.freq6': 'Triwulan',
+                'maintenance.schedule.time6': '2 jam',
+                'maintenance.schedule.resp6': 'Teknisi service',
+                
+                // Navigation - Indonesian
+                'maintenance.continue.title': 'Lanjut Belajar',
+                'maintenance.continue.espresso.title': 'Panduan Espresso',
+                'maintenance.continue.espresso.desc': 'Kuasai dasar-dasar bikin espresso',
+                'maintenance.continue.recipes.title': 'Resep Kopi',
+                'maintenance.continue.recipes.desc': 'Belajar bikin latte, cappuccino, dan lainnya',
+                'maintenance.continue.quota.title': 'Kuota & Tips',
+                'maintenance.continue.quota.desc': 'Pelajari tentang persediaan dan sistem kontribusi',
                 
                 // Quota Page
                 'quota.title': 'Kuota & Tips - Cinte Coffee Corner',
